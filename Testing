@@ -1,0 +1,8 @@
+# Testing 
+#login application
+import random
+name = input("What is your name? ")
+otp = random.randint(1000,9999)
+print("Hello " + name + " your OTP is " + str(otp))
+user_otp = (input("Enter your OTP: "))
+print("Welcome " + name) if user_otp == str(otp) else print(user_otp != str(otp))
